@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/sticky.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Jari & Taika</title>
+ 
+    <script>
+ 
+ 
+    var css = "";
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+    {document.write("<link href='css/mobilestyles.css' rel='stylesheet' type='text/css'>")}
+ 
+ 
+    else
+    {
+    document.write("<link href='css/computerstyles.css' rel='stylesheet' type='text/css'>")
+    
+    }
+</script>
+<style>
+    .mySlides {display:none;}
+</style>
+</head>
+<body>
+
+<header id="topofpage">
+<div class="w3-content w3-section" style="width:100%">
+  <img class="mySlides" src="images/site-header01.png" alt="Ensimmäinen header kuva" style="width:100%">
+  <img class="mySlides" src="images/site-header02.png" alt="Toinen header kuva" style="width:100%">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
+
+</header>
+
+    <div id="navigationwrap" style="height:55px">
+        <div id="navigation" class="navigation">
+            <nav id="main-nav" class="main-nav">
+                <a class="active">Etusivu</a>
+                <a href="tietoa.html">Jari & Taika</a>
+                <a href="galleria.html">Kuvagalleria</a> 
+                <a href="yhteys.html">Yhteys</a>
+                <a href="en/index.html">In English</a>
+            </nav>
+        </div>
+    </div>
+<div class="contentbox">
+    <div class="logo">
+        <img src="images/jarijataikalogo.png" alt="Logo">
+    </div>
+        <h1 class="subtitle">Tilaa yhtye viihdyttämään juhlaan kuin juhlaan</h1>
+        <div class="post">
+            <div class="content">
+            <p>
+				Jari ja Taika on täyden palvelun tanssiorkesteri ja viiden mukavan muusikon yhtye, joka tuo vauhtia ja viihdykettä juhliisi. <b>Keikkailemme kaikkialla Etelä- ja Länsi-Suomessa</b> Humppilasta käsin. Laajasta ohjelmistosta löytyvät esimerkiksi ikivihreät jazzklassikot vuosien varrelta, suomipop-suosikit, päivän iskelmät sekä muutama oma sävellyskin. Meillä rytmi on veressä ja <b>yleisön viihdyttäminen sydämen asiana.</b>
+			</p>
+			
+			<p>
+				<a href="tietoa.html">Lue lisää</a> yhtyeemme jäsenistä ja historiasta.
+            </p>
+            </div>
+        </div>
+    <nav class="backtotop">
+        <a href="#topofpage">Palaa ylös</a>
+    </nav>
+</div>
+    
+
+
+<div class="contentbox">
+        <h1 class="subtitle">Voit tilata meidät esimerkiksi:</h1>
+            <div class="post">
+                <div class="content">
+                    <ul>
+        		        <li>Tanssilavoille</li>
+        		        <li>Kesäjuhliin</li>
+        		        <li>Häihin</li>
+        		        <li>Pikkujouluihin ja peijaisiin</li>
+        		        <li>Ravintoloihin ja terasseille</li>
+        		        <li>Synttäreille</li>
+        		    </ul>
+        		    <p>
+        		    	Lisäksi tulemme minne tahansa, missä kaivataan musiikkia piristämään menoa tai ylläpitämään leppoisaa tunnelmaa. Ota siis yhteyttä ja kysy tarjousta!
+        		    </p>
+                </div>
+            </div>
+        <nav class="backtotop">
+            <a href="#topofpage">Palaa ylös</a>
+        </nav>
+</div>
+    
+
+    
+<div id="sound" class="contentbox">
+        <h1 class="subtitle">Ohjelmisto asiakkaan toiveiden mukaan</h1>
+            <div class="post">
+                <div class="content">
+                    <p>
+    				    <a href="files/Taika_Ohjelmisto.xls" target="_blank"><img src="images/icon-excel.gif" alt="Excel icon"> katso täältä esimerkkejä ohjelmistostamme.</a>
+    				</p>
+                    <p>
+    				Tarjoamme valmiina 16 settivaihtoehtoa, joiden joukossa on sekä menevämpiä tanssipotpureita, että rauhallisempiin tilaisuuksiin taustamusiikiksi soveltuvia settejä. Pyrimme vastaamaan mahdollisimman hyvin asiakkaan toiveisiin ohjelmiston osalta, joten neuvotellaan extrakappaleista tarpeen mukaan. Valmiiden esimerkkien joukosta on helppo poimia omaa makua ja haluttua tunnelmaa vastaava setti.
+                    </p>
+                </div>
+            </div>
+    <nav class="backtotop">
+        <a href="#topofpage">Palaa ylös</a>
+    </nav>
+</div>
+    
+
+
+<div id="site-footer" class="footer">
+<div id="social">
+    <div id="fb">    
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = 'https://connect.facebook.net/fi_FI/sdk.js#xfbml=1&version=v2.11&appId=82572863742';
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+        <div class="fb-page" data-href="https://www.facebook.com/JariTaika-191704827574713/?hc_ref=ARRcUQcf4_TBL5Fj0-t4sJ03Rx83k1CKAhIBoUVwFDlkmNSHOrCuuvBse0j9YNgw7Cg&amp;fref=nf" data-tabs="timeline" data-width="300" data-height="100" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/JariTaika-191704827574713/?hc_ref=ARRcUQcf4_TBL5Fj0-t4sJ03Rx83k1CKAhIBoUVwFDlkmNSHOrCuuvBse0j9YNgw7Cg&amp;fref=nf" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/JariTaika-191704827574713/?hc_ref=ARRcUQcf4_TBL5Fj0-t4sJ03Rx83k1CKAhIBoUVwFDlkmNSHOrCuuvBse0j9YNgw7Cg&amp;fref=nf">Jari&amp;Taika</a></blockquote></div>
+    </div>
+</div>
+    <p>Jari & Taika | <a href="tel:0408293710">040 829 3710</a> | <a href="mailto:jari.mustajarvi@hamk.fi">jari.mustajarvi@hamk.fi</a></p>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+</body>
+</html>

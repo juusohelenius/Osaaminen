@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/sticky.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Jari & Taika</title>
+    <script>
+ 
+    var css = "";
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+    {document.write("<link href='css/mobilestyles.css' rel='stylesheet' type='text/css'>")}
+ 
+ 
+    else
+    {
+    document.write("<link href='css/computerstyles.css' rel='stylesheet' type='text/css'>")
+    }
+</script>   
+<style>
+    .mySlides {display:none;}
+</style>
+</head>
+<body>
+
+<header id="topofpage">
+   <div class="w3-content w3-section" style="width:100%">
+  <img class="mySlides" src="images/site-header01.png" alt="Ensimmäinen header kuva" style="width:100%">
+  <img class="mySlides" src="images/site-header02.png" alt="Toinen header kuva" style="width:100%">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
+</header>
+
+<div id="navigationwrap" style="height:55px">
+    <div id="navigation" class="navigation">
+        <nav id="main-nav" class="main-nav">
+            <a href="index.html">Etusivu</a>
+            <a class="active">Jari & Taika</a>
+            <a href="galleria.html">Kuvagalleria</a> 
+            <a href="yhteys.html">Yhteys</a>
+            <a href="en/about.html">In English</a>
+        </nav>
+
+    </div>
+</div>
+
+<div class="contentbox">
+    <div class="logo">
+        <img src="images/jarijataikalogo.png" alt="Logo">
+    </div>
+        <h1 class="subtitle">Tanssiorkesteri tempaa mukaansa eteläisessä Suomessa</h1>
+            <div class="post">
+                <div class="content">
+                <p>
+					Keikkailemme pääasiassa Turku-Tampere-Helsinki -akselilla, mutta kannattaa kysyä tanssiorkesteriamme keikalle kauemmaskin. Iloinen ja tarttuva meininkimme toimii pohjoisemmassakin. Ota yhteyttä ja pyydä tarjous keikasta.
+				</p>
+				<p>
+					<a href="tietoa.html">Lue lisää</a> yhtyeemme jäsenistä ja historiasta.
+                </p>
+                </div>
+            </div>
+        <nav class="backtotop">
+            <a href="#topofpage">Palaa ylös</a>
+        </nav>
+</div>
+
+
+
+<div id="jasenet" class="contentbox">
+    <h1 class="subtitle">Tanssiorkesterimme jäsenet</h1>
+        <div class="post">
+            <div class="content">
+                <div id="jasen1"><img src="images/jarinaama.png" alt="Jarin naama" style="height:50px; vertical-align:middle;"><p style="display:inline;padding-left:10px;">Jari Mustajärvi - harmonikka, laulu</p></div>
+                    <div id="tiedot1">
+                        <img src="images/jari.jpg" alt="Jarin kuva">
+                        <p>
+                        Yhtyeen puuhamiehenä häärii Jari Mustajärvi, jolle musiikki on ollut rakkain harrastus pikkupojasta lähtien. Jarin pääinstrumentti on harmonikka, mutta myös saksofoni soi välillä. Jari toimii myös laulusolistina useimmissa kappaleissa.
+                        </p>
+                        </div>
+                <div id="jasen2"><img src="images/jukkanaama.png" alt="Jukan naama" style="height:50px; vertical-align:middle;"><p style="display:inline;padding-left:10px;">Jukka Kaurila - bassokitara, laulu, harmonikka</p></div>                    
+                    <div id="tiedot2">
+                        <img src="images/jukka.jpg" alt="Jukan kuva">
+                        <p>
+                        Jukka Kaurila on monipuolinen muusikko, joka soittaa Taika-yhtyeessä bassoa ja harmonikkaa ja välillä myös rumpuja. Jukka ja Jari tapasivat jo kouluaikoina ja perustivat tuolloin ensimmäisen yhtyeensä, joka soitteli koulun bileissä ym. nuorisotapahtumissa. Sittemmin tiet erkanivat, mutta noin pari vuotta sitten parivaljakko palasi jällleen yhteen. Jukan myötä Taika-yhtyeen musiikkiin on tullut ripaus Beatles vaikutteita, sillä hän on yksi Suomen parhaita Beatles asiantuntijoita.    
+                        </p>
+                    </div>
+                <div id="jasen3"><img src="images/jaakkonaama.png" alt="Jaakon naama" style="height:50px; vertical-align:middle;"><p style="display:inline;padding-left:10px;">Jaakko Heikkilä - saksofoni</p></div>                    
+                    <div id="tiedot3">
+                        <img src="images/jaakko.jpg" alt="Jaakon kuva">
+                        <p>
+                        Jaakko &quot;Jaska&quot; Heikkilä on toisen polven soittajia, jolle saksofoni on ollut osa elämää aina lapsuudesta lähtien. Jaakko on myös hankkinut soittokokemusta eri tanssiyhtyeistä sekä puhallinorkestereista. Jaakon mieluisin instrumentti on tenorisaksofoni, mutta myös altto ja sopraano soivat hänen käsittelyssään kauniisti.
+                        </p>
+                    </div>
+                <div id="jasen4"><img src="images/hannunaama.png" alt="Hannun naama" style="height:50px; vertical-align:middle;"><p style="display:inline;padding-left:10px;">Hannu Karvia - rummut</p></div>                    
+                    <div id="tiedot4">
+                        <img src="images/hannu.jpg" alt="Hannun kuva">
+                        <p>
+                        Rumpuja Taika-yhtyeessä soittelee Hannu Karvia, joka on pitkän linjan muusikko. Hannu on soitellut monissa eri kokoonpanoissa erilaista musiikkia, pääpainopistealueenaan tanssimusiikki. Hannu Karvia on pitkän linjan muusikko, joka on keikkaillut yhtäjaksoisesti 70-luvulta lähtien jo yli 40 vuotta. Hannun tarkat kompit luovat tukevan pohjan bändin musiikille ja hän maustaa kappaleita juuri sopivaan paikkaan osuvilla filleillä ja breikeillä - ja mikä parasta, Hannu osaa soittaa rumpuja myös hiljaa, mutta kuitenkin svengaavasti!    
+                        </p>
+                    </div>
+                
+                <script>
+                /*global $*/
+                $( "#jasen1" ).click(function() {
+                  $( "#tiedot1" ).slideToggle( "slow" );
+                });
+                $( "#jasen2" ).click(function() {
+                  $( "#tiedot2" ).slideToggle( "slow" );
+                });
+                $( "#jasen3" ).click(function() {
+                  $( "#tiedot3" ).slideToggle( "slow" );
+                });
+                $( "#jasen4" ).click(function() {
+                  $( "#tiedot4" ).slideToggle( "slow" );
+                });
+                </script>
+            </div>
+        </div>
+    <nav class="backtotop">
+        <a href="#topofpage">Palaa ylös</a>
+    </nav>
+</div>        
+
+
+
+    
+<div id="spotify" class="contentbox">
+    <h1 class="subtitle">Kuuntele ääninäytteemme!</h1>
+        <div class="post">
+            <div class="content">
+            <iframe src="https://open.spotify.com/embed/artist/3AXzj9CsJxWYHX9IXtlFT2" style="width:280px; height:360px; border:none;"></iframe>
+            </div>
+        
+        </div>
+    <nav class="backtotop">
+        <a href="#topofpage">Palaa ylös</a>
+    </nav>
+</div>
+    
+
+    
+<div class="contentbox">
+        <h1 class="subtitle">Tanssiorkesterimme historiaa</h1>
+            <div class="post">
+                <div class="content">
+			    
+			    <p>Taika-yhtye sai alkunsa syksyllä 2004, jolloin fonistillamme Jaakko Heikkilällä oli tarve kasata bändi muutamaa keikkaa varten Humppilassa sijaitsevaan Otsolan Hovi ravintolaan. Jaakko tunsi Humppilassa asuvan Olli Kylä-Markulan ja kysyi tätä rumpaliksi, joka puolestaan kysyi Jari Mustajärveä hanuristiksi. Vielä tarvittiin basisti ja laulusolisti. Sekä Jarilla, että Ollilla oli yhteisiä soittokokemuksia loimaalaisen Kyösti Vaittisen kanssa, joten hänet kutsuttiin bändiin mukaan. Yhtye oli näin saanut alkuperäisen kokoonpanonsa. Jaakon myymät keikat hoidettiin sovitusti ja koska homma tuntui toimivan mukavasti päätettiin jatkaa harjoittelua ja keikkailua sitä mukaa kun tilauksia tuli. </p>
+				<p>Harjoituksia pidettiin lähes viikoittain ja vuonna 2005 äänitettiin ensimmäinen CD Jarin hankkimalla kiintolevyäänittimellä. Levyä ei virallisesti julkaistu, vaan sitä päätettiin käyttää lähinnä markkinoinnissa näytteenä yhtyeen ohjelmistosta ja osaamisesta.</p>
+				<h2>Uutta virtaa kokoonpanoon</h2>
+				<p>Vuoden 2007 loppukeväällä rumpuihin tuli Reino "Reiska" Saari Loimaalta Olli Kylä-Markulan lopettaessa aktiivikeikkailun. Kyösti Vaittinen päätti jättäytyä pois yhtyeestä syksyllä 2008. Hänen tilallaan bassoa soittaa nykyisessä kokoonpanossa Jukka Kaurila, joka on myös taitava harmonikan soittaja. Solisteina toimivat Jari ja Jukka. Rummuissa soittelee nykyään Hannu Karvia Somerolta.</p>
+                <h2>Osallistuminen kilpailuihin</h2>
+                <p>Keväällä 2007 Taika osallistui Extra-viihteen järjestämään Viihdyttäjä 2007 -kilpailuun ja eteni aina Ruusulinnassa pidettyyn semifinaaliin asti. Voittoa ei sillä kertaa tullut, mutta kokemuksena kilpailu oli antoisa ja antoi lisäpotkua harjoitteluun.</p>
+                <p>Syksyllä 2011 yhtye osallistui YLEn järjestämään Uuden Musiikin kilpailuun, jossa haettiin Suomen edustajaa keväällä 2012 Azarbaidzanissa järjestettävään Eurovision -laulukilpailuun. Vaikka Jari & Taika ei edustanutkaan Suomea Bakussa, se sijoittui Uuden Musiikin kilpailussa 12 parhaimman joukkoon omalla kappaleellaan "Aamuyön ikuisuus", josta on myös ranskankielinen versio.</p>
+                <h2>Kesäpainotteista keikkailua</h2>
+                <p>Yhtyeen esiintymiset painottuvat yleensä kesäaikaan, jolloin olemme usein soittamassa häissä, synttäreillä, lavatansseissa ja kesäjuhlilla. Toinen sesonkiaika on marras-joulukuussa, jolloin pidetään paljon mm. pikkujouluja ja peijaisia. Koska lähes kaikilla yhtyeen jäsenillä on päiväsaikaan muita töitä, ei keikkoja ole koskaan pyrittykään hankkimaan kovin paljoa - lähinnä on soitettu ne, joita on kysytty, aktiivisen markkinoinnin jäädessä enemmän lehti-ilmoittelun ja www-sivujen varaan. Pääasiassa keikkailemme Turku-Tampere-Helsinki -kolmiossa, mutta aina silloin tällöin kutsu käy kauemmaskin.</p>
+                <h2>Laajentuvan ohjelmiston runkona tanssimusiikki</h2>
+                <p>"Reiskan" myötä musiikillinen mielenkiintomme suuntautui 70- ja 80-lukujen musiikkiin, jossa erityisinä syventymisen kohteinamme ovat olleet mm. Mamban, Kari Tapion, Tapani Kansan, Frederikin ja Rauli Somerjoen biisit, joita olemme sisällyttäneet tanssi-ohjelmistoon. Näitä on myös kuultavissa viimeisimmällä levyllämme, joka valmistui vuoden 2009 syksyllä.</p>
+                <p>Ohjelmistomme vankan rungon muodostaa tanssimusiikki, Suomipop ja päivän iskelmät. Soitannollisesta näkökulmasta tarkasteltuna erityisen riemastuttavia kappaleita ovat mm. Suomijazzin alkuaikojen levytykset, joiden autenttisesta soinnista ja innostavasta otteesta pyrimme omaksumaan vaikutteita omaankin soitantaamme. Omia sävellyksiä Jarille on kertynyt jonkin verran ja niistä muutamia on soitettu silloin tällöin myös keikoilla.</p>
+                <p>Uutena aluevaltauksena olemme ottaneet ohjelmistoon mukaan klassisia Beatles sävelmiä sekä perinteisiä harmonikkakappaleita sovitettuna kahdelle harmonikalle.</p>
+                <p>Perhejuhlissa soittelemme tavallisesti alkuillasta taustamusiikkina jazzia, mikä onkin herättänyt yleisössä usein ihastuneita reaktioita - sellaista musiikkia tänä päivänä harvemmin kuulee. Instrumenttivalikoimamme tukee erityisesti haitari- ja saksofonipainotteisen jazzin esittämistä. Tuolta saralta esikuviksi olemme löytäneet mm. Matti Viljasen, Teuvo Suojärven, Paul Norbäckin ja Kalevi Viitamäen kuolemattomia levytyksiä.</p>
+                
+                </div>
+            </div>
+        <nav class="backtotop">
+            <a href="#topofpage">Palaa ylös</a>
+        </nav>
+</div>
+
+
+
+<div id="sound" class="contentbox">
+        <h1 class="subtitle">Ohjelmisto asiakkaan toiveiden mukaan</h1>
+            <div class="post">
+                <div class="content">
+                
+                <p><a href="files/Taika_Ohjelmisto.xls" target="_blank"><img src="images/icon-excel.gif" alt="Excel icon"> katso täältä esimerkkejä ohjelmistostamme.</a> </p>
+                <p>Tarjoamme valmiina 16 settivaihtoehtoa, joiden joukossa on sekä menevämpiä tanssipotpureita, että rauhallisempiin tilaisuuksiin taustamusiikiksi soveltuvia settejä. Pyrimme vastaamaan mahdollisimman hyvin asiakkaan toiveisiin ohjelmiston osalta, joten neuvotellaan extrakappaleista tarpeen mukaan. Valmiiden esimerkkien joukosta on helppo poimia omaa makua ja haluttua tunnelmaa vastaava setti.</p>
+                <p><a href="yhteys.html">Ota yhteyttä</a></p>
+                </div>
+            </div>
+        <nav class="backtotop">
+            <a href="#topofpage">Palaa ylös</a>
+        </nav>
+</div>
+
+<div id="site-footer" class="footer">
+<div id="social">
+    <div id="fb">    
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = 'https://connect.facebook.net/fi_FI/sdk.js#xfbml=1&version=v2.11&appId=82572863742';
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+        <div class="fb-page" data-href="https://www.facebook.com/JariTaika-191704827574713/?hc_ref=ARRcUQcf4_TBL5Fj0-t4sJ03Rx83k1CKAhIBoUVwFDlkmNSHOrCuuvBse0j9YNgw7Cg&amp;fref=nf" data-tabs="timeline" data-width="300" data-height="100" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/JariTaika-191704827574713/?hc_ref=ARRcUQcf4_TBL5Fj0-t4sJ03Rx83k1CKAhIBoUVwFDlkmNSHOrCuuvBse0j9YNgw7Cg&amp;fref=nf" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/JariTaika-191704827574713/?hc_ref=ARRcUQcf4_TBL5Fj0-t4sJ03Rx83k1CKAhIBoUVwFDlkmNSHOrCuuvBse0j9YNgw7Cg&amp;fref=nf">Jari&amp;Taika</a></blockquote></div>
+    </div>
+</div>
+<p>Jari & Taika | <a href="tel:0408293710">040 829 3710</a> | <a href="mailto:jari.mustajarvi@hamk.fi">jari.mustajarvi@hamk.fi</a></p>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+</body>
+</html>

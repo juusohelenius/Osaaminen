@@ -1,0 +1,197 @@
+@media screen and (max-width:840px) {
+    html, body {min-width:840px} }
+
+body {
+    background-image: url("../images/jaritaikatausta.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: auto auto 20px;
+    width: 60%;
+}
+
+
+header {
+    background-color:whitesmoke;
+    height:300px;
+    outline:none;
+    margin-top:20px;
+    margin-bottom:0;
+    overflow:hidden;
+}
+
+.main-nav, .sub-nav {
+    margin-bottom:0;
+    
+}
+
+nav {
+    height:55px;
+    text-align:center;
+    background-color:whitesmoke;
+}
+
+nav a {
+    text-decoration:none;
+    color: black;
+    font-family: 'Fjalla One', sans-serif;
+    padding: 12px 16px;
+    height:30px;
+    display:inline-block;
+}
+
+nav a:hover {
+    transition: 0.5s;
+    color:white;
+    background-color: green;
+}
+
+.active {
+    background-color: green;
+    color:white;
+    cursor: pointer;
+} 
+
+.logo {
+    margin:0 auto;
+    text-align:center;
+}
+
+.contentbox {
+    padding:20px 50px 50px;
+    color: black;
+    font-family: 'Fjalla One', sans-serif;
+    background-color: whitesmoke;
+    opacity: 0.9;
+    outline:none;
+    border-bottom:solid gray 1px;
+}
+
+.subtitle {
+    text-align: center;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    outline:none;
+}
+
+.content {
+    text-align: left;
+    padding: 14px 16px;
+}
+.post {
+    margin: auto;
+    display: inline-block;
+}
+
+#jasenet {
+    text-align:center;
+}
+
+#jasen1, #jasen2, #jasen3, #jasen4 {
+    padding:5px 0 5px;
+    cursor:pointer;
+}
+
+#jasen1:hover, #jasen2:hover, #jasen3:hover, #jasen4:hover {
+    background-color:green;
+}
+
+#tiedot1, #tiedot2, #tiedot3, #tiedot4 {
+    width: 315px;
+    display:none;
+    padding-top:10px;
+    text-align:center;
+    }
+
+
+#spotify {
+    text-align:center;
+}
+
+
+
+.backtotop {
+    margin:0 auto;
+    text-align:center;
+    padding-bottom:20px;
+    padding-top:20px;
+}
+
+.backtotop a {
+    color: black;
+    font-family: 'Fjalla One', sans-serif;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin:0 auto;
+}
+
+.footer {
+    background-color: whitesmoke;
+    padding-top:30px;
+    opacity: 0.9;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.footer p {
+    color: black;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+
+
+.sticky-nav-bar {
+    background: black none repeat scroll 0 0;
+    left: 0;
+    padding: 0 !important;
+    position: fixed !important;
+    top: 0;
+    transition: all 500ms ease 0s;
+    width: 100%;
+    z-index: 9999;
+    opacity:0.9;
+  }
+
+/* image gallery */
+
+.gallery {
+    max-width:100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.thumbnails img {
+    height: 80px;
+    border: 4px solid #555;
+    padding: 1px;
+    margin: 0 10px 10px 0;
+    display: inline-block;
+}
+
+.thumbnails img:hover {
+    border: 4px solid green;
+    cursor:pointer;
+}
+
+.preview {
+    overflow:hidden;
+    text-align:center;
+}
+
+.preview img {
+    border: 4px solid #444;
+    padding: 1px;
+    max-width:100%;
+    
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: green;
+}

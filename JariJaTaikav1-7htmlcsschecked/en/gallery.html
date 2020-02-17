@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../js/sticky.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Jari & Taika</title>
+ 
+    <script>
+ 
+    /*global navigator*/
+    var css = "";
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+    {document.write("<link href='../css/mobilestyles.css' rel='stylesheet' type='text/css'>")}
+ 
+ 
+    else
+    {
+    document.write("<link href='../css/computerstyles.css' rel='stylesheet' type='text/css'>")
+    
+    }
+</script>
+<style>
+    .mySlides {display:none;}
+</style>   
+</head>
+<body>
+
+
+<header id="topofpage">
+    <div class="w3-content w3-section" style="width:100%">
+  <img class="mySlides" src="../images/site-header01.png" alt="First header image" style="width:100%">
+  <img class="mySlides" src="../images/site-header02.png" alt="Second header image" style="width:100%">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
+</header>
+
+<div id="navigationwrap" style="height:55px">
+    <div id="navigation" class="navigation">
+        <nav id="main-nav" class="main-nav">
+            <a href="index.html">Front page</a>
+            <a href="about.html">Jari & Taika</a>
+            <a class="active">Gallery</a> 
+            <a href="contact.html">Contact Us</a>
+            <a href="../galleria.html">Suomeksi</a>
+        </nav>
+
+    </div>
+</div>
+
+<div class="contentbox">
+    <div class="logo">
+        <img src="../images/jarijataikalogo.png" alt="Logo">
+    </div>    
+        <h1 class="subtitle">Image gallery</h1>
+            <div class="post" style="display:block;">
+              <div class="gallery">
+              
+                <br />
+              
+                <div class="thumbnails">
+                  <img onmousedown="getElementById('preview').src=this.src" src="../images/kuva01.jpg" alt="1">
+                  <img onmousedown="getElementById('preview').src=this.src" src="../images/kuva02.jpg" alt="2">
+                  <img onmousedown="getElementById('preview').src=this.src" src="../images/kuva03.jpg" alt="3">
+                  <img onmousedown="getElementById('preview').src=this.src" src="../images/kuva04.jpg" alt="4">
+                  <img onmousedown="getElementById('preview').src=this.src" src="../images/kuva01.jpg" alt="5">
+                  <img onmousedown="getElementById('preview').src=this.src" src="../images/kuva02.jpg" alt="6">
+                  <img onmousedown="getElementById('preview').src=this.src" src="../images/kuva03.jpg" alt="7">
+                  <img onmousedown="getElementById('preview').src=this.src" src="../images/kuva04.jpg" alt="8">
+                  <img onmousedown="getElementById('preview').src=this.src" src="../images/kuva01.jpg" alt="9">
+                  <img onmousedown="getElementById('preview').src=this.src" src="../images/kuva02.jpg" alt="10">
+                  <img onmousedown="getElementById('preview').src=this.src" src="../images/kuva03.jpg" alt="11">
+                  <img onmousedown="getElementById('preview').src=this.src" src="../images/kuva04.jpg" alt="12">
+                </div><br/>
+              </div>
+                <div class="preview">
+                  <img id="preview" src="../images/kuva01.jpg" alt="Default image" />
+                </div>
+              </div>
+        <nav class="backtotop">
+            <a href="#topofpage">Return to top</a>
+        </nav>
+</div>
+
+<div id="site-footer" class="footer">
+    <div id="social">
+        <div id="fb">    
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = 'https://connect.facebook.net/fi_FI/sdk.js#xfbml=1&version=v2.11&appId=82572863742';
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+            <div class="fb-page" data-href="https://www.facebook.com/JariTaika-191704827574713/?hc_ref=ARRcUQcf4_TBL5Fj0-t4sJ03Rx83k1CKAhIBoUVwFDlkmNSHOrCuuvBse0j9YNgw7Cg&amp;fref=nf" data-tabs="timeline" data-width="300" data-height="100" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/JariTaika-191704827574713/?hc_ref=ARRcUQcf4_TBL5Fj0-t4sJ03Rx83k1CKAhIBoUVwFDlkmNSHOrCuuvBse0j9YNgw7Cg&amp;fref=nf" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/JariTaika-191704827574713/?hc_ref=ARRcUQcf4_TBL5Fj0-t4sJ03Rx83k1CKAhIBoUVwFDlkmNSHOrCuuvBse0j9YNgw7Cg&amp;fref=nf">Jari&amp;Taika</a></blockquote></div>
+        </div>
+    </div>
+    <p>Jari & Taika | <a href="tel:0408293710">040 829 3710</a> | <a href="mailto:jari.mustajarvi@hamk.fi">jari.mustajarvi@hamk.fi</a></p>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="../js/smoothscroll.js"></script>
+</body>
+</html>

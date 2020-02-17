@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../js/sticky.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Jari & Taika</title>
+ 
+    <script>
+ 
+ 
+    var css = "";
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+    {document.write("<link href='../css/mobilestyles.css' rel='stylesheet' type='text/css'>")}
+ 
+ 
+    else
+    {
+    document.write("<link href='../css/computerstyles.css' rel='stylesheet' type='text/css'>")
+    
+    }
+</script>   
+<style>
+.mySlides {display:none;}
+</style>
+</head>
+<body>
+
+<header id="topofpage">
+    <div class="w3-content w3-section" style="width:100%">
+  <img class="mySlides" src="../images/site-header01.png" alt="First header image" style="width:100%;">
+  <img class="mySlides" src="../images/site-header02.png" alt="Second header image" style="width:100%;">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
+</header>
+
+<div id="navigationwrap" style="height:55px">
+    <div id="navigation" class="navigation">
+        <nav id="main-nav" class="main-nav">
+            <a href="index.html">Front page</a>
+            <a class="active">Jari & Taika</a>
+            <a href="gallery.html">Gallery</a> 
+            <a href="contact.html">Contact Us</a>
+            <a href="../tietoa.html">Suomeksi</a>
+        </nav>
+
+    </div>
+</div>
+
+<div class="contentbox">
+    <div class="logo">
+        <img src="../images/jarijataikalogo.png" alt="Logo">
+    </div>
+        <h1 class="subtitle">The dance orchestra thrills in Southern Finland</h1>
+            <div class="post">
+                <div class="content">
+                    <p>We mainly play gigs on the Turku-Tampere-Helsinki axis, but it is worth asking our dance orchestra for a gig farther away. Our joyfull and catchy "meininki" also works in the north. Please <a href="contact.html">contact us</a> and request a quote for a gig.</p>
+        			<p><a href="about.html">Read more</a> about our band members and history.</p>
+                </div>
+            </div>
+        <nav class="backtotop">
+            <a href="#topofpage">Return to top</a>
+        </nav>
+</div>
+
+<div id="jasenet" class="contentbox">
+        <h1 class="subtitle">Members of the band</h1>
+            <div class="post">
+                <div class="content">
+                    <div id="jasen1"><img src="../images/jarinaama.png" alt="Jari's face" style="height:50px; vertical-align:middle;"><p style="display:inline;padding-left:10px;">Jari Mustajärvi - Accordeon, Singing</p></div>
+                        <div id="tiedot1">
+                            <img src="../images/jari.jpg" alt="Jari's picture">
+                            <p>
+                            The front-man of the band Jari Mustajärvi, to whom music has been an important hobby since he was a small boy. Jari's main instrument is accordeon, but he occasionally also plays the saxophone. Jari is the lead singer in most songs.
+                            </p>
+                            </div>
+                    <div id="jasen2"><img src="../images/jukkanaama.png" alt="Jukka's face" style="height:50px; vertical-align:middle;"><p style="display:inline;padding-left:10px;">Jukka Kaurila - Bass, Singing, Accordeon</p></div>                    
+                        <div id="tiedot2">
+                            <img src="../images/jukka.jpg" alt="Jukka's picture">
+                            <p>
+                            Jukka Kaurila is a very versatile musician, who plays the bass and accordeon in Jari & Taika. Occasionally he also plays drums. Jukka and Jari met during school times and formed their first band, which played in school parties and youth events. Their paths separated then, but a few years ago this duo is back at it again. With Jukka joining in, the band's music was infused with some Beatles influences, since he's one of Finland's top experts on Beatles.
+                            </p>
+                        </div>
+                    <div id="jasen3"><img src="../images/jaakkonaama.png" alt="Jaakko's face" style="height:50px; vertical-align:middle;"><p style="display:inline;padding-left:10px;">Jaakko Heikkilä - Saxophone</p></div>                    
+                        <div id="tiedot3">
+                            <img src="../images/jaakko.jpg" alt="Jaakko's picture">
+                            <p>
+                            Jaakko &quot;Jaska&quot; Heikkilä is a second generation musician, to whom Saxophone has been a big part of life since childhood. Jaakko has gained experience in different bands and orchestras. Jaakkos favorite instrument is tenor saxophone, but also alto and soprano sound amazing played by him.
+                            </p>
+                        </div>
+                    <div id="jasen4"><img src="../images/hannunaama.png" alt="Hannu's face" style="height:50px; vertical-align:middle;"><p style="display:inline;padding-left:10px;">Hannu Karvia - Drums</p></div>                    
+                        <div id="tiedot4">
+                            <img src="../images/hannu.jpg" alt="Hannu's picture">
+                            <p>
+                            Drums are being harrased in the band by Hannu Karvia, who is a longline musician. Hannu has played in many different bands a variety of different styles of music emphasizing in dance music. He has played gigs for 40 years non-stop since the 70s. Hannu's precise drumming create a robust foundation for the bands music, which he spices up with the right fills and breaks - and best of all, he can play drums quiet still keeping a nice groove.
+                            </p>
+                        </div>
+                    
+                    <script>
+                    /*global $*/
+                    $( "#jasen1" ).click(function() {
+                      $( "#tiedot1" ).slideToggle( "slow" );
+                    });
+                    $( "#jasen2" ).click(function() {
+                      $( "#tiedot2" ).slideToggle( "slow" );
+                    });
+                    $( "#jasen3" ).click(function() {
+                      $( "#tiedot3" ).slideToggle( "slow" );
+                    });
+                    $( "#jasen4" ).click(function() {
+                      $( "#tiedot4" ).slideToggle( "slow" );
+                    });
+                    </script>
+                </div>
+            </div>
+        <nav class="backtotop">
+            <a href="#topofpage">Return to top</a>
+        </nav>
+</div>
+        
+<div id="spotify" class="contentbox">
+    <h1 class="subtitle">Listen to our music!</h1>
+        <div class="post">
+            <iframe src="https://open.spotify.com/embed/artist/3AXzj9CsJxWYHX9IXtlFT2" style="width:280px; height:360px; border:none;"></iframe>
+            </div>
+        <nav class="backtotop">
+            <a href="#topofpage">Return to top</a>
+        </nav>
+</div>
+            
+<div class="contentbox">
+        <h1 class="subtitle">History of our band</h1>
+            <div class="post">
+                <div class="content">
+			    
+			    <p>The Taika band started in the autumn of 2004, when our bandmate Jaakko Heikkilä had the need to form a band for a few gigs at the Otsola Hovi restaurant in Humppila. Jaakko knew Olli Kylä-Markula, who lived in Humppila, and asked this as a drummer who in turn asked Jari Mustajärvi as accordion player. The band still needed a bassist and songwriter. Both Jari and Olli had common musical experiences with the lively Kyösti Vaittinen, so he was invited to the band. The band had thus got its original configuration. The gigs sold by Jaako were handled appropriately and because it seemed comfortable to work, it was decided to continue training and entertaining as orders came. </p>
+				<p>Exercises were held almost weekly and in 2005 the first CD was recorded with Jari's newly puchased hard drive recorder. The album was not officially released, but it was decided to use mainly as a marketing sample of the band's repertoire and know-how.</p>
+				<h2>The band got new steam</h2>
+				<p>At the end of the year 2007, Reino "Reiska" Saari from Loimaa replaced Olli Kylä-Markula on drums when he finished as an active musician. Kyösti Vaittinen decided to leave the band in autumn 2008. In his place, bass is played in the current composition by Jukka Kaurila, who is also a skilled accordion player. The soloists are Jari and Jukka. The drums are now being played by Hannu Karvia from Somero.</p>
+                <h2>Participation in competitions</h2>
+                <p>In the spring of 2007, Taika participated in the Viihdyttäjä 2007 event and proceeded to the semifinals held at Ruusulinta. The band wasn't victorious that time, but as an experience the competition was rewarding and gave a boost to training.</p>
+                <p>In autumn 2011, the band participated in the New Music Competition organized by YLE, where Finland's representative was sought for to participate in the Eurovision Song Contest in Azarbaidzan in spring 2012. Although Jari & Taika did not represent Finland in Baku, it ranked among the top 12 in the New Music Competition with its own song "Aamuyön ikuisuus", of which there is also a French version.</p>
+                <h2>Summer-time touring</h2>
+                <p>The performances of the band are usually emphasized during the summer, when we often play at the weddings, birthday parties, open-air dance parties, and summer festivities. The second season is in November and December, when many christmas parties are held. Since almost every band member has other work in the daytime, there has never been a lot of gigs to due to this - with active marketing remaining on magazine advertising and web pages. We mainly play at the Turku-Tampere-Helsinki Trio, but every now and then the invitation goes farther.</p>
+                <h2>Dance music as the core of the expanding repertoire</h2>
+                <p>With "Reiska", our musical interest was directed to the music of the '70s and' 80s, where our special focus has been, among other things, Mamba, Kari Tapio, Tapani Kansa, Frederik and Rauli Somerjoki, which we have included in the dance repertoire. These are also heard on our latest album, which was completed in autumn 2009.</p>
+                <p>The core of our repertoire is made up of dance music, Finnish pop and the day's top hits. From a musical point of view, some particularly reverend songs include, The recordings of the beginnings of the Finnish jazz, which we seek to embrace with authentic playing and inspiring excitement. Jari's own compositions have also accumulated somewhat and some of them have been played occasionally on gigs.</p>
+                <p>As a new paradigm, we've included classic Beatles tunes and traditional accordion pieces for two accordions.</p>
+                <p>At family celebrations, we usually play jazz in the background as background music, which has attracted thrilled reactions in the audience - the kind of music that's less listened to nowadays. Our instrumental choices support especially the performance of accordion and saxophone-inspired jazz. From that point on, we have found, among other things, The immortal recordings of Matti Viljanen, Teuvo Suojärvi, Paul Norbäck and Kalevi Viitamäki.</p>
+                
+                </div>
+            </div>
+        <nav class="backtotop">
+            <a href="#topofpage">Return to top</a>
+        </nav>
+</div>
+
+<div id="sound" class="contentbox">
+        <h1 class="subtitle">Repertoire according to customer's wishes</h1>
+            <div class="post">
+                <div class="content">
+                
+                <p><a href="../files/Taika_Ohjelmisto.xls" target="_blank"><img src="../images/icon-excel.gif" alt="Excel icon"> Check out our repertoire here.</a></p>
+                <p>We offer 16 set options, among which are both more prosperous dance prospects and more seductive choices for quieter occasions. We strive to respond as much as possible to the customer's wishes with regard to the repertoire, so negotiate extras as needed. From among the completed sets, it is easy to pick the right songs for the desired ambience.</p>
+                <p><a href="contact.html">Contact us here</a></p>
+                </div>
+            </div>
+        <nav class="backtotop">
+            <a href="#topofpage">Return to top</a>
+        </nav>
+</div>
+
+<div id="site-footer" class="footer">
+    <div id="social">
+        <div id="fb">    
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = 'https://connect.facebook.net/fi_FI/sdk.js#xfbml=1&version=v2.11&appId=82572863742';
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+            <div class="fb-page" data-href="https://www.facebook.com/JariTaika-191704827574713/?hc_ref=ARRcUQcf4_TBL5Fj0-t4sJ03Rx83k1CKAhIBoUVwFDlkmNSHOrCuuvBse0j9YNgw7Cg&amp;fref=nf" data-tabs="timeline" data-width="300" data-height="100" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/JariTaika-191704827574713/?hc_ref=ARRcUQcf4_TBL5Fj0-t4sJ03Rx83k1CKAhIBoUVwFDlkmNSHOrCuuvBse0j9YNgw7Cg&amp;fref=nf" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/JariTaika-191704827574713/?hc_ref=ARRcUQcf4_TBL5Fj0-t4sJ03Rx83k1CKAhIBoUVwFDlkmNSHOrCuuvBse0j9YNgw7Cg&amp;fref=nf">Jari&amp;Taika</a></blockquote></div>
+        </div>
+    </div>
+    <p>Jari & Taika | <a href="tel:0408293710">040 829 3710</a> | <a href="mailto:jari.mustajarvi@hamk.fi">jari.mustajarvi@hamk.fi</a></p>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="../js/smoothscroll.js"></script>
+</body>
+</html>
